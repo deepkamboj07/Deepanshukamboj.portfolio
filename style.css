@@ -1,0 +1,549 @@
+body{
+  position: relative;
+  background: rgb(54,24,49);
+background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
+}
+.BeforeScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  .
+  .
+  display: none;
+}
+.AfterScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  .
+  .
+  display: block;
+}
+/* ------------------navabar------------------------ */
+.portfolio-navbar{
+  height: 80px;
+  position:fixed;
+}
+.navbar{
+  height: 90px;
+  margin: 0 10px;
+  padding: 0px 80px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom: solid white;
+}
+.navbar-brand{
+  font-size: 20px;
+  color: #e7eff6;
+}
+.navbar-brand:hover{
+  color: #f6cd61;
+}
+
+.navbar ul li{
+  margin-left: 16px;
+  font-size: 18px;
+  position: relative;
+  letter-spacing: 1px;
+}
+.navbar ul li .nav-link{
+  position: relative;
+  letter-spacing: 0.8px;
+  color: rgb(185, 184, 184);
+  padding: 0 10px;
+}
+.navbar ul li .nav-link:after{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 1.8px;
+  width: 0px;
+  top:30px;
+  transition: 0.4s;
+}
+.navbar ul li .nav-link:hover{
+    color: white;
+}
+.navbar ul li .nav-link:hover:after{
+  width: 100%;
+  background-color: #f6cd61;
+}
+.toogle{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.toogle i{
+  font-size: 40px;
+  color: white;
+  visibility: hidden;
+}
+.carousel {
+  position: inherit;
+}
+.nav-slide{
+  position: absolute;
+  width: 0;
+  visibility: hidden;
+}
+
+/* ------------------navabar End----------------------- */
+
+/* --------------------home--------------------- */
+.p-home{
+  padding-top: 100px;
+  background-color: #1e1f26;
+}
+.head{
+  height: 900px;
+}
+.profile-image img{
+  height: 70%;
+}
+.intro {
+  padding-top: 30%;
+  text-align: justify;
+  color: white;
+}
+.intro h5{
+  color:  #f6cd61;
+}
+
+i{
+  color: white;
+  font-size: 20px;
+}
+.typewriter {
+    font-family: Courier, monospace;
+	display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+  	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    border-right: 3px solid #f6cd61;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 50%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #f6cd61;
+    }
+}
+
+/* --------------------home End--------------------- */
+
+/* --------------------About--------------------- */
+.about{
+  margin-top: 10px;
+ background: rgb(54,24,49);
+background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
+}
+.heading{
+    color:  #fff;
+    text-align: left;
+    font-size: 55px;
+    padding: 1rem;
+    border-bottom: .1rem solid #b2b2b6;
+
+    margin-left: 10%;
+    margin-right:70%;
+}
+.heading h1{
+  color:white;
+}
+.heading h1 span{
+  color: #f6cd61;
+}
+.about-pera{
+  padding: 30px 30px;
+  font-size: 19px;
+  color: white;
+  text-align:justify;
+}
+.detail{
+ color: white;
+ padding: 15px 20px;
+ font-size: 18px;
+}
+.detail div strong{
+  color: #f6cd61;
+}
+
+.boxes{
+  padding: 20px 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.boxes .box{
+   background-color:#651e3e ;
+   width:370px;
+   height: 180px;
+   text-align: center;
+   padding: 60px;
+   margin: 10px;
+}
+.boxes div h3{
+  font-size: 22px;
+  color: black;
+}
+.boxes div{
+  color: #ffeead;
+}
+/* --------------------About End--------------------- */
+
+/* --------------------Skill--------------------- */
+.my-skill{
+  padding-top: -20px;
+  background-color:#1e1f26;
+}
+
+/* ---------slideshow section ----------*/
+
+.slide{
+  background:#1e1f26;
+  color: #fff;
+  text-align: center;
+
+}
+.slide h2{
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 2;
+}
+.slide-pic{
+  margin-top: 3%;
+  margin-bottom: 10px;
+  width: 200px;
+  height:200px;
+}
+.slide p{
+  font-size: 20px;
+}
+.carousel-item{
+ padding: 6% 15%;
+}
+
+/* --------------------Skill End--------------------- */
+
+/* --------------------Resume--------------------- */
+
+.my-resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.my-resume h4{
+  color: white;
+}
+.resume-card{
+  position: relative;
+  width: 800px;
+  height: 350px;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  transition: 0.5s;
+}
+.resume-card .circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.resume-card .circle:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+.resume-card .circle:hover:before{
+    background-color: #651e3e;
+    clip-path: circle(900px at center);
+}
+.resume-card img{
+  position: absolute;
+  margin: -10xpx;
+  left: 19%;
+  height: 400px;
+  width: 300px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.resume-card:hover img{
+  left: 65%;
+}
+.content{
+  position: relative;
+  padding: 20px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.resume-card:hover .content{
+  left: 0;
+  visibility: visible;
+  opacity: 10;
+
+}
+.download{
+  width: 120px;
+  position: relative;
+}
+
+/* --------------------Resume End--------------------- */
+.contact{
+  padding-top: 30px;
+  padding-bottom: 130px;
+}
+
+.contact .infor{
+  color: white;
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0 0 24px 0 #36454f;
+}
+
+.contact .infor i{
+  color: #3385c6;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .infor h3{
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #f6cd61;
+}
+.contact .infor p{
+  padding: 0 0 10px 60px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.contact .infor .email p{
+  padding-top: 5px;
+}
+.contact .infor .email:hover i,
+.contact .infor .address:hover i,
+.contact .infor .location:hover i,
+.contact .infor .phone:hover i{
+  background: black;
+  color: white;
+}
+
+.from{
+  padding: 400px;
+}
+.contact .con{
+  padding-top: 40px;
+  width: 100%
+  padding:80px;
+  box-shadow: 0 0 24px 0 #36454f;
+
+}
+.form label{
+  color: white;
+}
+footer{
+  justify-content: center;
+  text-align: center;
+  background-color:  #251e3e;
+  color: white;
+  height: 80px;
+}
+footer p{
+  font-size: 18px;
+  padding: 19px;
+}
+@media(max-width:989px) {
+  .p-home{
+    padding-top: 20px;
+  }
+.p-home{
+  background-color: blue;
+}
+  .head{
+    height: 1250px;
+  }
+  .profile-image img{
+    height: 70%;
+    margin-left: 120px
+  }
+  .boxes .box{
+    width: 100%;
+  }
+}
+
+@media (max-width:989px) {
+  .navbar{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  /* The Overlay (background) */
+  .toogle i{
+    font-size: 40px;
+    color: yellow;
+    visibility: visible;
+    cursor: pointer;
+  }
+
+.nav-slide{
+      visibility: hidden;
+      color: white;
+      position: absolute;
+      border: solid white;
+      border-bottom: none;
+      border-top: none;
+      width:0;
+      height: 100%;
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      position: fixed;
+      background-color: rgb(0,0,0); /* Black fallback color */
+      background-color: rgba(0,0,0, 0.95); /* Black w/opacity */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s;
+}
+
+.nav-slide ul{
+  padding: 1px 13%;
+}
+.nav-slide ul li{
+  border: 0.9px solid white;
+  border-radius: 30px;
+  background-color:  #1e1f26;
+  padding: 10px 0;
+  margin: 8px 0;
+}
+.nav-slide ul li a{
+  font-size: 35px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.nav-slide ul li a:hover{
+  color: white;
+}
+
+.nav-slide .image{
+  padding-top:13%;
+  text-align: center;
+  justify-content: center;
+}
+.nav-slide .image img{
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  border: solid white;
+}
+.nav-slide .image h2{
+  padding-top: 35px;
+  font-size: 55px;
+  font-weight: 400;
+  color:#d0e1f9;
+}
+.nav-slide .image .social{
+  margin-top: 3%;
+}
+.nav-slide .image .social a i{
+  font-size: 45px;
+  padding: 25px;
+  margin-top: 5px;
+  border: solid white;
+  border-radius: 100%;
+}
+.nav-slide .image .social a{
+  margin: 10px;
+  padding: 10px;
+}
+.nav-slide .image .social a i:hover{
+  background-color: #005b96;
+}
+
+.overlay-content {
+  position: relative;
+  top: 2%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.nav-slide .closebtn {
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 80px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 60px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/*------------Home-------------------*/
+.p-home{
+  padding-top: 100px;
+  background-color: #1e1f26;
+}
+.head{
+  height: 900px;
+}
+.profile-image img{
+  height: 100%;
+}
+.intro h1{
+ font-size: 50px;
+}
+}
