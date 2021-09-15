@@ -7,16 +7,12 @@ background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
 {
   height: 100px; /*Whatever you want*/
   width: 100%; /*Whatever you want*/
-  .
-  .
   display: none;
 }
 .AfterScroll
 {
   height: 100px; /*Whatever you want*/
   width: 100%; /*Whatever you want*/
-  .
-  .
   display: block;
 }
 /* ------------------navabar------------------------ */
@@ -374,7 +370,7 @@ background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
 }
 .contact .con{
   padding-top: 40px;
-  width: 100%
+  width: 100%;
   padding:80px;
   box-shadow: 0 0 24px 0 #36454f;
 
