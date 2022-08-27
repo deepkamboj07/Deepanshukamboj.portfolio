@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Dancing+Script:wght@600&family=Fraunces:ital,opsz,wght@1,9..144,100&family=Open+Sans:wght@300&family=Oswald:wght@200&family=Poppins:wght@100;300;500&family=Roboto+Condensed:wght@300&family=Rubik&display=swap');
 body{
   position: relative;
-  background: rgb(54,24,49);
-background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
+  background: rgb(0, 0, 0);
+background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(22, 23, 32) 76%);
 }
 .BeforeScroll
 {
@@ -17,16 +18,14 @@ background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
 }
 /* ------------------navabar------------------------ */
 .portfolio-navbar{
-  height: 80px;
   position:fixed;
+  z-index: 99;
+  margin: 0;
+  background-color: #000;
 }
 .navbar{
-  height: 90px;
-  margin: 0 10px;
+  height: 70px;
   padding: 0px 80px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-bottom: solid white;
 }
 .navbar-brand{
   font-size: 20px;
@@ -65,12 +64,10 @@ background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
   background-color: #f6cd61;
 }
 .toogle{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
 }
 .toogle i{
-  font-size: 40px;
+  font-size: 51px;
   color: white;
   visibility: hidden;
 }
@@ -149,30 +146,39 @@ i{
 /* --------------------About--------------------- */
 .about{
    margin: 10%;
- background: rgb(54,24,49);
-background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
+ background: rgb(0, 0, 0);
+background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 76%);
+padding: 5rem;
 }
 .heading{
     color:  #fff;
-    text-align: left;
+    text-align: center;
     font-size: 55px;
     padding: 1rem;
     border-bottom: .1rem solid #b2b2b6;
-
-    margin-left: 10%;
-    margin-right:70%;
 }
 .heading h1{
   color:white;
 }
 .heading h1 span{
-  color: #f6cd61;
+  color: #0B5ED7;
+}
+.pe-ra{
+  display: flex;
+  align-items: center;
+}
+.img-para{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 .about-pera{
+  font-family: 'Roboto Condensed', sans-serif;
   padding: 30px 30px;
-  font-size: 19px;
+  font-size: 18px;
+  font-weight: 400;
   color: white;
-  text-align:justify;
 }
 .detail{
  color: white;
@@ -190,7 +196,7 @@ background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
   display: flex;
 }
 .boxes .box{
-   background-color:#651e3e ;
+   background-color:#0D6EFD ;
    width:370px;
    height: 180px;
    text-align: center;
@@ -381,7 +387,7 @@ background: radial-gradient(circle, rgba(54,24,49,1) 0%, rgba(30,31,38,1) 76%);
 footer{
   justify-content: center;
   text-align: center;
-  background-color:  #251e3e;
+  background-color:  #0a0a0b;
   color: white;
   height: 80px;
 }
@@ -410,16 +416,15 @@ footer p{
 
 @media (max-width:989px) {
   .navbar{
-    text-align: center;
-    justify-content: center;
     display: flex;
+    align-items: end!important;
     flex-direction: column;
     margin-top: 20px;
   }
   /* The Overlay (background) */
   .toogle i{
-    font-size: 40px;
-    color: yellow;
+    font-size: 51px;
+    color: rgb(255, 255, 255);
     visibility: visible;
     cursor: pointer;
   }
@@ -433,7 +438,7 @@ footer p{
       border-top: none;
       width:100%;
       height: 100%;
-      z-index: 1; /* Sit on top */
+      z-index: 117; /* Sit on top */
       left: 0;
       top: 0;
       position: fixed;
@@ -543,6 +548,11 @@ footer p{
 .intro h1{
  font-size: 55px;
  }
+ .document span button{
+    margin-top: 30px;
+    font-size: 30px;
+    width: 7rem;
+}
  .intro h4,h5{
    font-size: 40px;
  }
@@ -568,6 +578,7 @@ footer p{
   }
   .about-pera{
     font-size: 33px;
+    text-align: center;
   }
   .detail ul li{
     font-size: 33px;
@@ -609,6 +620,51 @@ footer p{
 .form .send{
     height: 60px;
     width: 200px;
+}
+
+.social-box i{
+  font-size: 4rem;
+}
+.cont-act{
+  max-width: 14rem;
+  font-size: 28px!important;
+}
+.document span button{
+  width: 15rem;
+}
+.profile-box{
+  max-width: 55rem;
+  width: 100%;
+  padding-top: 0px;
+  height: 20rem;
+}
+.skill-topic{
+  font-size: 30px;
+}
+.skill__{
+  padding: 28px;
+}
+.profile-box img{
+  max-width: 40rem;
+  width: 40rem;
+  height: 20rem;
+}
+
+.project-box{
+  max-width: 100rem;
+  height: auto;
+}
+.projects-display{
+  max-width: 40rem;
+  height: 10rem;
+  width: 80rem;
+  background-color: #fff;
+}
+
+.projects-display img{
+  max-width: 40rem;
+  height: 10rem;
+  width: 100%;
 }
 }
 
