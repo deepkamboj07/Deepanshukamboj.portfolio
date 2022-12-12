@@ -651,19 +651,23 @@ footer p{
 }
 
 .project-box{
-  max-width: 100rem;
+  max-width: 60rem;
   height: auto;
+  padding: 3rem;
+  padding-top: 0.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(76, 76, 76, 0.2), 0 6px 20px 0 rgba(98, 98, 98, 0.19);
 }
 .projects-display{
   max-width: 40rem;
-  height: 10rem;
+  height: 20rem;
   width: 80rem;
   background-color: #fff;
 }
 
 .projects-display img{
   max-width: 40rem;
-  height: 10rem;
+  height: 20rem;
   width: 100%;
 }
 }
